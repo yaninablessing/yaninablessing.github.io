@@ -76,6 +76,10 @@
   font-family: "Amatic SC", cursive;
 }
 
+html {
+  font-size: 14px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
