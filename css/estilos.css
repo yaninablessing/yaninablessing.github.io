@@ -76,10 +76,6 @@
   font-family: "Amatic SC", cursive;
 }
 
-body {
-  font-size: 12px;
-}
-
 header {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -138,6 +134,10 @@ header a {
 header i {
   color: white;
   margin: 0vw 0.3vw;
+}
+
+html, body {
+  font-size: 8px;
 }
 
 main .logo {
