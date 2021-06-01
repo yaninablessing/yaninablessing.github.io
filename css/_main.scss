@@ -1,8 +1,4 @@
-main {
-    /* section {
-        border: 5px solid black;
-    } */
-
+main {   
     .logo {
         display: flex;
         justify-content: center;        
@@ -31,30 +27,22 @@ main {
                 &:hover {
                     text-decoration: underline;
                 }
-            }        
-           
+            }     
         }
     }
 
     .marca {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
         
-        .principal {
-            /* background-image: linear-gradient(
-                rgba(49, 35, 49, 0.25),
-                rgba(49, 35, 49, 0.6)
-              ), url('../img/pets/petsPortada1.png'); */
-            animation: fondo 20s infinite;
-            width: 85vw;
-            height: 75vh;
-            background-size: cover;
-            background-position: center;
-            margin-top: 5vh;
+        .principal {            
+            align-items: center;
+            height: 97%;
             display: flex;
             justify-content: center;
-            align-items: center;
+            padding-top: 9vh;
+            width: 85%;
 
             h1 {
                 display: none;
@@ -63,57 +51,25 @@ main {
                 font-weight: 100;
                 color: $color-3;
                 padding-top: 20vh;
-                padding-right: 20vw;                 
-
-            }
-
-            @keyframes fondo{
-                0% {
-                    background-image: url('../img/Fondos-principal/Diapositiva1.PNG');
-                                                         
-                }
-                        
-                33% {
-                    background-image: url('../img/Fondos-principal/Diapositiva2.PNG');                                 
-                }
-
-                66% {
-                    background-image: url('../img/Fondos-principal/Diapositiva3.PNG');
-                }
-
-                100% {
-                    background-image: url('../img/Fondos-principal/Diapositiva1.PNG');
-                }
-            }
+                padding-right: 20vw;                
+            }           
 
             h1 {
-                display: none;
-                /* font-size: 12rem;
-                font-family: $glamorous;
-                font-weight: 100;
-                color: $color-3;
-                padding-top: 20vh;
-                padding-right: 20vw;  */
-                
-
-                i {
-                    font-size: 8.5rem;
-                    margin: 0vw 2vw;
-                }
+                display: none;                           
             }
         }
 
         .secciones-marca {
+            color: white;
             display: flex;
             justify-content: space-between;
-            width: 85vw;
-            font-size: 2rem;
-            color: white;
+            font-size: 1.5rem;
             text-align: center;
+            width: 72.34%;
 
             a {
-                text-decoration: none;
                 color: white;
+                text-decoration: none;
             }
 
             h3 {
@@ -145,20 +101,17 @@ main {
     }
     
     #nosotros {
-        width: 85vw;
+        width: 77vw;
         height: 50vh;
         display: flex;
         justify-content: center;        
         margin: 5vh auto;
-        padding: 3vh 0vw;
-             
+        padding: 3vh 0vw;             
     
         .nosotros {
             display: flex;
-            justify-content: center;  
-               
-        
-        
+            justify-content: center;                
+                
             .frase {
                 display: flex;
                 justify-content: flex-end;
@@ -179,7 +132,6 @@ main {
                 }
             }                
     
-
             .vision {
                 display: flex;
                 flex-direction: column;
@@ -187,10 +139,11 @@ main {
                 text-align: justify;
                 width: 50%;
                 padding: 2.7vw;
+                height: 100%;
                 
                 p {
                     font-family: $amatic;
-                    font-size: 2.9rem;
+                    font-size: 2.7rem;
                     padding-top: 2vh;
                     
                 }
@@ -217,24 +170,21 @@ main {
                 }
             }
         }
-
     }
 
     #productos {
-        width: 85vw;
         display: flex;
         justify-content: center;
-        margin: 30vh auto 0vh;
-    
+        margin: 30vh auto 0vh;    
+        width: 85vw;
     
         .productos {
-            display: flex;
-            justify-content: space-evenly;
             align-items: flex-start;
+            display: flex;
             flex-grow: 1;
+            justify-content: space-evenly;
             padding: 10vh 0vw;
             
-
             h3 {
                 font-size: 3.5rem;
             }
@@ -248,23 +198,21 @@ main {
             p {
                 font-size: 2.2vw;
                 text-align: justify;
-                width: 20vw;
                 padding-top: 1.5vh;
                 padding-bottom: 3vh;
+                width: 20vw;
             }
 
             .Ble {
+                align-items: center;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
             
-
                 .imagen {
                 width: 20vw;
                 height: 25vh;
                 }
-
                                
                 .Pij {
                     background-image: url('../img/Pijamadas/pijamadas11.png');
@@ -285,168 +233,111 @@ main {
                 }
 
                 .boton1 {
-                @include boton($color-6,10vw);
-                
+                @include boton($color-6,12vw); 
+                    a{
+                        text-decoration: none;
+                        &:visited {
+                            color: white;
+                        }
+                    }               
                 }
 
                 .boton2 {
-                    @include boton($color-5,10vw);
-                    
+                    @include boton($color-5,12vw);
+                    a{
+                        text-decoration: none;
+                        &:visited {
+                            color: white;
+                        }
+                    }                     
                 }
 
                 .boton3 {
-                    @include boton($color-7,10vw);
-                    
-                    }
+                    @include boton($color-7,12vw);
+                    a{
+                        text-decoration: none;
+                        &:visited {
+                            color: white;
+                        }
+                    }                     
+                }
             }
-
-
-        }    
-        
+        }          
     }
 
     #clientes {
-        width: 100vw;
+        align-items:center;
         display: flex;
         justify-content: center;
-        justify-content: space-evenly;
-        padding-top: 15vh;
-        margin: auto;
-
-        .clientes, .experiencia {
-            
+        margin: 0vh auto;
+        padding-top: 10vh;
+        width: 85vw;
+        
+        .clientes {            
+            align-items: center;
             display: flex;
             flex-direction: column;
+            flex-grow: 1;            
             justify-content: center;
-            align-items: center;
 
             .cara {
-                font-size: 10rem;
                 color: $color-7;
+                font-size: 10rem;
             }
 
             h4 {
                 font-size: 5rem;
-                color: black;
                 text-align: right;
                 font-family: $amatic;
                 padding: 1vw;
-            }
-            
-            p {
-                font-size: 3rem;
-                text-align: justify;
-                width: 25vw;
-                padding-top: 1.5vh;
-                padding-bottom: 3vh;
-            }
-
-            .comillas {
-                font-size: 3rem;
-            }
-
-            .imagenes-clientes {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-
-                img {
-                    width: 5vw;
-                    margin: 2vw;
-                    border-radius: 50%;
-                }
-            }
-
-            
-
-        }
+            }                    
+        }        
 
         .experiencia {
-            background-image: url('../img/Pijamadas/pijamadas21.png');
-            background-position: center;
-            background-size: cover;
-            width: 29.5vw;
-
-            p {
-                font-size: 5.5rem;
-                color: white;
-                text-align: right;
-                font-family: $amatic;
-                padding: 1vw;
-                background-color: rgba(0,0,0,0.6);
-
-            span {
-                font-family: $glamorous;
-                font-size: 5.5rem;
-                color: $color-6;
-                
-                
-                }
-            }
-        }       
-
-        
+            background-color: white;
+            display: flex;
+            flex-grow: 1;
+            height: 90vh;                                    
+            justify-content: center;             
+        }            
     }
 
     #contactanos {
-        padding-top: 0.5vh;
-    
+        padding-top: 0.5vh;    
 
         .contactanos {
-            width: 48vw;
-            margin: 10vh auto;
+            align-items: center;
+            background-color: $color-5;
+            border-radius: 30px;
+            color: white;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            background-color: $color-5;
-            color: white;
-            border-radius: 30px;
-            padding: 6vh 0vh;
-            
+            margin: 10vh auto;
+            padding: 6vh 0vh;            
+            width: 60%;
 
             h4 {
                 font-size: 5.5rem;
-                font-weight: bold;
-                
+                font-weight: bold;                
             }
 
             .links-contacto {
+                align-items: flex-start;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
             }
 
             a {
-                font-size: 3.5rem;
                 color: white;
+                font-size: 3rem;
                 text-decoration: none;
                 padding: 2vh 2vw;
 
                 i {
                     padding: 2vh 2vw;
                 }
-            }
-
-          
+            }         
         }
-    }
-
-    /*
-    .boton-whatsapp {
-        position: fixed;
-        bottom: 10vh;
-        right: 5vw;
-        transition: all 0.4s;
-        border-radius: 50%;
-
-        img {
-            border-radius: 50%;
-            width: 6vw;
-        }
-
-        &:hover {
-            transform: scale(0.9);
-        }
-    } */
+    }    
 }

@@ -1,0 +1,264 @@
+@media screen and (max-width: 768px){
+    html {
+        font-size: 7px;
+    }
+
+    main {
+        .logo {
+            img {
+                padding: 2vh 1vw;
+            }
+        }
+        .marca {
+            width: 100vw;
+            height: 45vh;
+            margin: 0vh auto;
+
+            .principal {
+                padding-top: 3vh;
+                height: 75%;                
+            }            
+        }
+
+        #nosotros {
+            margin: 0vh auto;
+            height: 100%;            
+
+            .nosotros {
+                .frase {
+                    h2 {
+                        font-size: 4.5rem;
+                        span {
+                            font-size:5.5rem
+                        }
+                    }
+                }
+
+                .vision {
+                    padding: 0vw 2.7vw 0vh 2.7vw;
+                    p {
+                        font-size: 3.5rem;                     
+                    }
+
+                    .boton-galeria {
+                        a {
+                            padding: 0vh 3.5vw 10vh;
+                        }
+                    }
+                }
+            }                
+        }
+
+        #productos {
+            margin: 0vh auto;            
+
+            .productos {
+                padding-bottom: 0vh;
+            }
+        }
+
+        #clientes {
+            margin: 0vh auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;                        
+
+            .experiencia {
+                height: 50vh;
+                
+                video {
+                    height:45vh;
+                }
+            }
+        }
+
+        #contactanos {
+            width: 75vw;
+            margin: 0vh auto;
+
+            .contactanos {
+                width: 100%;
+                margin: 5vh auto;
+
+                h4 {
+                    font-size: 6rem;
+                }
+
+                a {
+                    font-size: 4rem;
+                    padding: 3vh 2vw 0vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    html {
+        font-size: 4px;        
+    }
+
+    header {
+        font-size: 3rem;
+        font-weight: bold;
+        justify-content: space-between;
+        
+        .horarios {
+            span {
+                display: none;
+            }
+        }
+
+        a.showroom{
+            display: none;
+        }
+    }
+    
+    main {
+        section .logo {
+            margin: 0vh auto;
+            width: 30vw;
+
+            img {
+                width: 30vw;
+            }
+        }
+
+        nav {
+            ul {
+                font-size: 4rem;
+                font-weight: bold;
+            }            
+        }
+       
+        .marca {
+            height: 60%;
+            margin: 0vh auto;
+            width: 95vw;
+
+            .principal {
+                width: 90vw;                
+
+                video {
+                    width: 100%;
+                }
+            }
+
+            .secciones-marca {
+                width: 90vw;
+                font-size: 3rem;
+
+                h3 {
+                    display: none;
+                }
+            }                     
+        }
+
+        #nosotros {
+            width: 95vw;
+            margin-bottom: 5vh;
+            margin-top: 5vh;           
+
+            .nosotros {
+
+                flex-direction:column;
+                
+                .frase {
+                    justify-content: flex-start;
+                    text-align: center;
+                    width: 100%;                    
+
+                    h2 {
+                        text-align: left;
+                        
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+
+                .vision {
+                    padding: 0vh 3vw 2vw 3vw;
+                    width: 100%;
+
+                    p {
+                        font-size: 3.8rem;
+                    }                               
+
+                    .boton-galeria {
+                        font-size: 4rem;
+                        margin-top: 2vh;
+                        margin-bottom: 2vh;
+                        width: 25vw;
+                    }
+                }
+            }                       
+        }
+
+        #productos {
+
+            width: 95vw;
+            
+            .productos {
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+
+                h3 {
+                    font-size: 6rem;
+                }
+
+                img {
+                    width: 75vw;
+                }
+
+                p {
+                    font-size: 5rem;
+                    width: 75vw;
+                }
+
+                .Ble {
+                    .imagen {
+                        width: 75vw;
+                    }
+
+                    .boton1, .boton2, .boton3 {
+                        width: 25vw;
+                        font-size: 4rem;
+                        margin-top: 0vh;
+                        margin-bottom: 6vh;
+                    }
+                }
+            }
+        }
+
+        #clientes {
+            margin-top: 0vh;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+            width: 100vw;            
+
+            .experiencia {
+                video {
+                    height: 100%;                    
+                }
+            }
+        }
+
+        #contactanos {
+            width: 95vw;
+        }       
+    }
+
+    footer {
+        .pie {
+            a {
+                img {
+                    width: 5vw;
+                }
+            }
+        }
+        
+    }
+}

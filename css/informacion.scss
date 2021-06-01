@@ -1,0 +1,245 @@
+body, html {
+    overflow-x: hidden;       
+} 
+
+.parallax-content { 
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    perspective: 0.9px;    
+
+    .info-pijamadas, .info-can, .info-pet {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;        
+
+        h4 {
+            font-size: 4rem;
+            text-align:center;
+            padding: 4vh 0vw;
+        }
+        .parrafo{
+            background-color: rgba(255,255,255,0.5);
+            font-size: 3rem;
+            margin: 0vh auto;
+            width: 70%;
+        }
+
+        img {
+            margin: 2vh auto;
+            width: 40%;
+        }
+    }    
+  
+    .titulo {
+        font-size: 5rem;
+        margin: 8vh 0vw;
+        text-align: center;
+    }   
+    
+    .info-entrega{
+        background-color: rgba(255,255,255,0.5);
+        font-size: 3rem;
+        margin: 2vh 5vw;
+        text-align: center;
+        width: 90%;        
+    }
+
+    .parallax-section {
+        margin: 2vh 20vw;
+
+        .parallax-img {
+            background-size: 100%;
+            left: 0;
+            margin: auto;                      
+            position: absolute;
+            right: 0;
+            top: 0vh;
+            transform: translateZ(-1px) scale(3.5);
+            z-index: -1;
+        }
+        
+        .segunda {
+            top:100vh;            
+        }
+
+        .tercera {
+            top:300vh;
+        }
+
+        .cuarta {
+            top: 400vh;
+        }
+
+        .quinta {
+            top: 500vh;
+        }
+
+        .sexta {
+            top: 600vh;
+        }
+
+        .septima {
+            top: 700vh;
+        }
+
+        .octava {
+            top: 800vh;
+        }
+
+        .novena {
+            top: 900vh;
+        }
+
+        .decima {
+            top: 1000vh;
+        }
+        .decima1 {
+            top: 1100vh;
+        }
+        .decima2 {
+            top: 1200vh;
+        }
+        .decima3 {
+            top: 1300vh;
+        }
+        .decima4 {
+            top: 1400vh;
+        }
+    }
+
+    .inicio {        
+        background-color: #27ccc4;
+        border-radius: 35px;
+        color: white;
+        font-size: 3rem;
+        margin: 0vh auto 5vh;
+        text-align: center;
+        transition: all 0.4s;
+        padding: 0.5vh 0vh;
+        width: 16vw;
+
+        &:hover {
+        transform: scale(1.3);
+        }
+        
+        a {
+            text-decoration: none;
+
+            &:visited {
+            color: white;
+            }         
+        }       
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 3.3rem;
+        font-weight: bold;
+                
+        .horarios {
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .parallax-content {
+        
+        .titulo {
+            text-align: center;
+            margin: 4vh 0vw;
+        }  
+
+        .inicio {
+            font-size: 4rem;
+            width: 20vw;
+        }
+    
+        .parallax-section {
+            margin-left: auto;
+            padding-left: 2vw;
+            
+            .parrafo {
+                font-size: 7rem;
+            }
+               
+            .parallax-img {
+                transform: translateZ(-1px) scale(2);
+                background-size: 100%;
+                        
+            }        
+        }
+        
+        .info-pijamadas, .info-can, .info-pet {
+            .parrafo{
+                font-size:3.5rem;
+            }
+        }
+
+        .decima, .decima1,
+        .decima2, .decima3, .decima4 {
+            display: none;
+        } 
+    }
+}
+
+@media screen and (max-width: 460px) {
+    html {
+        font-size: 3px;        
+    }
+
+    header {
+        font-size: 3.8rem;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+
+    .parallax-content {
+        .inicio {
+            font-size: 4rem;
+            width: 25vw;
+        }  
+
+        section .logo {
+            width: 30vw;
+            margin: 0vh auto;
+
+            img {
+                width: 30vw;
+            }
+        }
+        
+        .titulo {
+            font-size: 7rem;           
+        } 
+
+        .info-pijamadas, .info-can, .info-pet {                 
+            h4 {
+                font-size: 8rem;
+                padding: 1vh 0vw;
+            }
+            .parrafo {
+                width: 90%;
+                font-size:6rem;   
+                font-weight: bold;             
+            }
+        }
+         
+        .octava, .novena, .decima, .decima1,
+        .decima2, .decima3, .decima4 {
+            display: none;
+        }     
+        
+        .info-entrega{
+            font-size: 6rem;
+            font-weight: bold;         
+        }
+
+        .titulo {
+            font-size: 9rem;           
+        }    
+    }
+}

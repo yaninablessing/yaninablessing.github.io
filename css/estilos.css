@@ -76,28 +76,28 @@
   font-family: "Amatic SC", cursive;
 }
 
-html {
+body {
   font-size: 12px;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #907cc9;
-  color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: bold;
-  text-transform: uppercase;
+  background-color: #907cc9;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 1.8rem;
+  font-weight: bold;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   letter-spacing: 0.3rem;
   position: -webkit-sticky;
   position: sticky;
+  text-transform: uppercase;
   top: 0px;
   z-index: 10;
 }
@@ -138,29 +138,6 @@ header a {
 header i {
   color: white;
   margin: 0vw 0.3vw;
-}
-
-main {
-  /* section {
-        border: 5px solid black;
-    } */
-  /*
-    .boton-whatsapp {
-        position: fixed;
-        bottom: 10vh;
-        right: 5vw;
-        transition: all 0.4s;
-        border-radius: 50%;
-
-        img {
-            border-radius: 50%;
-            width: 6vw;
-        }
-
-        &:hover {
-            transform: scale(0.9);
-        }
-    } */
 }
 
 main .logo {
@@ -204,6 +181,9 @@ main nav ul a:hover {
 }
 
 main .marca {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,32 +191,21 @@ main .marca {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 main .marca .principal {
-  /* background-image: linear-gradient(
-                rgba(49, 35, 49, 0.25),
-                rgba(49, 35, 49, 0.6)
-              ), url('../img/pets/petsPortada1.png'); */
-  -webkit-animation: fondo 20s infinite;
-          animation: fondo 20s infinite;
-  width: 85vw;
-  height: 75vh;
-  background-size: cover;
-  background-position: center;
-  margin-top: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 97%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 9vh;
+  width: 85%;
 }
 
 main .marca .principal h1 {
@@ -249,67 +218,26 @@ main .marca .principal h1 {
   padding-right: 20vw;
 }
 
-@-webkit-keyframes fondo {
-  0% {
-    background-image: url("../img/Fondos-principal/Diapositiva1.PNG");
-  }
-  33% {
-    background-image: url("../img/Fondos-principal/Diapositiva2.PNG");
-  }
-  66% {
-    background-image: url("../img/Fondos-principal/Diapositiva3.PNG");
-  }
-  100% {
-    background-image: url("../img/Fondos-principal/Diapositiva1.PNG");
-  }
-}
-
-@keyframes fondo {
-  0% {
-    background-image: url("../img/Fondos-principal/Diapositiva1.PNG");
-  }
-  33% {
-    background-image: url("../img/Fondos-principal/Diapositiva2.PNG");
-  }
-  66% {
-    background-image: url("../img/Fondos-principal/Diapositiva3.PNG");
-  }
-  100% {
-    background-image: url("../img/Fondos-principal/Diapositiva1.PNG");
-  }
-}
-
 main .marca .principal h1 {
   display: none;
-  /* font-size: 12rem;
-                font-family: $glamorous;
-                font-weight: 100;
-                color: $color-3;
-                padding-top: 20vh;
-                padding-right: 20vw;  */
-}
-
-main .marca .principal h1 i {
-  font-size: 8.5rem;
-  margin: 0vw 2vw;
 }
 
 main .marca .secciones-marca {
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 85vw;
-  font-size: 2rem;
-  color: white;
+  font-size: 1.5rem;
   text-align: center;
+  width: 72.34%;
 }
 
 main .marca .secciones-marca a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 main .marca .secciones-marca h3 {
@@ -344,7 +272,7 @@ main .marca .secciones-marca .marca-pets {
 }
 
 main #nosotros {
-  width: 85vw;
+  width: 77vw;
   height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,11 +331,12 @@ main #nosotros .nosotros .vision {
   text-align: justify;
   width: 50%;
   padding: 2.7vw;
+  height: 100%;
 }
 
 main #nosotros .nosotros .vision p {
   font-family: "Amatic SC", cursive;
-  font-size: 2.9rem;
+  font-size: 2.7rem;
   padding-top: 2vh;
 }
 
@@ -433,7 +362,6 @@ main #nosotros .nosotros .vision .boton-galeria a {
 }
 
 main #productos {
-  width: 85vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,21 +369,22 @@ main #productos {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 30vh auto 0vh;
+  width: 85vw;
 }
 
 main #productos .productos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 10vh 0vw;
 }
 
@@ -472,12 +401,15 @@ main #productos .productos img {
 main #productos .productos p {
   font-size: 2.2vw;
   text-align: justify;
-  width: 20vw;
   padding-top: 1.5vh;
   padding-bottom: 3vh;
+  width: 20vw;
 }
 
 main #productos .productos .Ble {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,9 +420,6 @@ main #productos .productos .Ble {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 main #productos .productos .Ble .imagen {
@@ -518,14 +447,14 @@ main #productos .productos .Ble .Pets {
 
 main #productos .productos .Ble .boton1 {
   background-color: #27ccc4;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   border-radius: 35px;
   margin-top: 5vh;
   color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  width: 10vw;
+  width: 12vw;
 }
 
 main #productos .productos .Ble .boton1:hover {
@@ -533,16 +462,24 @@ main #productos .productos .Ble .boton1:hover {
           transform: scale(1.3);
 }
 
+main #productos .productos .Ble .boton1 a {
+  text-decoration: none;
+}
+
+main #productos .productos .Ble .boton1 a:visited {
+  color: white;
+}
+
 main #productos .productos .Ble .boton2 {
   background-color: #207391;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   border-radius: 35px;
   margin-top: 5vh;
   color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  width: 10vw;
+  width: 12vw;
 }
 
 main #productos .productos .Ble .boton2:hover {
@@ -550,16 +487,24 @@ main #productos .productos .Ble .boton2:hover {
           transform: scale(1.3);
 }
 
+main #productos .productos .Ble .boton2 a {
+  text-decoration: none;
+}
+
+main #productos .productos .Ble .boton2 a:visited {
+  color: white;
+}
+
 main #productos .productos .Ble .boton3 {
   background-color: #907cc9;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   border-radius: 35px;
   margin-top: 5vh;
   color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  width: 10vw;
+  width: 12vw;
 }
 
 main #productos .productos .Ble .boton3:hover {
@@ -567,22 +512,33 @@ main #productos .productos .Ble .boton3:hover {
           transform: scale(1.3);
 }
 
+main #productos .productos .Ble .boton3 a {
+  text-decoration: none;
+}
+
+main #productos .productos .Ble .boton3 a:visited {
+  color: white;
+}
+
 main #clientes {
-  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 15vh;
-  margin: auto;
+  margin: 0vh auto;
+  padding-top: 10vh;
+  width: 85vw;
 }
 
-main #clientes .clientes, main #clientes .experiencia {
+main #clientes .clientes {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,77 +546,38 @@ main #clientes .clientes, main #clientes .experiencia {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-main #clientes .clientes .cara, main #clientes .experiencia .cara {
-  font-size: 10rem;
+main #clientes .clientes .cara {
   color: #907cc9;
+  font-size: 10rem;
 }
 
-main #clientes .clientes h4, main #clientes .experiencia h4 {
+main #clientes .clientes h4 {
   font-size: 5rem;
-  color: black;
   text-align: right;
   font-family: "Amatic SC", cursive;
   padding: 1vw;
-}
-
-main #clientes .clientes p, main #clientes .experiencia p {
-  font-size: 3rem;
-  text-align: justify;
-  width: 25vw;
-  padding-top: 1.5vh;
-  padding-bottom: 3vh;
-}
-
-main #clientes .clientes .comillas, main #clientes .experiencia .comillas {
-  font-size: 3rem;
-}
-
-main #clientes .clientes .imagenes-clientes, main #clientes .experiencia .imagenes-clientes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main #clientes .clientes .imagenes-clientes img, main #clientes .experiencia .imagenes-clientes img {
-  width: 5vw;
-  margin: 2vw;
-  border-radius: 50%;
 }
 
 main #clientes .experiencia {
-  background-image: url("../img/Pijamadas/pijamadas21.png");
-  background-position: center;
-  background-size: cover;
-  width: 29.5vw;
-}
-
-main #clientes .experiencia p {
-  font-size: 5.5rem;
-  color: white;
-  text-align: right;
-  font-family: "Amatic SC", cursive;
-  padding: 1vw;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-main #clientes .experiencia p span {
-  font-family: "simply-glamorous";
-  font-size: 5.5rem;
-  color: #27ccc4;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 90vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main #contactanos {
@@ -668,8 +585,12 @@ main #contactanos {
 }
 
 main #contactanos .contactanos {
-  width: 48vw;
-  margin: 10vh auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #207391;
+  border-radius: 30px;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,13 +601,9 @@ main #contactanos .contactanos {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #207391;
-  color: white;
-  border-radius: 30px;
+  margin: 10vh auto;
   padding: 6vh 0vh;
+  width: 60%;
 }
 
 main #contactanos .contactanos h4 {
@@ -695,6 +612,9 @@ main #contactanos .contactanos h4 {
 }
 
 main #contactanos .contactanos .links-contacto {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,14 +622,11 @@ main #contactanos .contactanos .links-contacto {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 main #contactanos .contactanos a {
-  font-size: 3.5rem;
   color: white;
+  font-size: 3rem;
   text-decoration: none;
   padding: 2vh 2vw;
 }
@@ -735,5 +652,217 @@ main #contactanos .contactanos a i {
 .pie a img {
   width: 2vw;
   margin: 1vh;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+  main .logo img {
+    padding: 2vh 1vw;
+  }
+  main .marca {
+    width: 100vw;
+    height: 45vh;
+    margin: 0vh auto;
+  }
+  main .marca .principal {
+    padding-top: 3vh;
+    height: 75%;
+  }
+  main #nosotros {
+    margin: 0vh auto;
+    height: 100%;
+  }
+  main #nosotros .nosotros .frase h2 {
+    font-size: 4.5rem;
+  }
+  main #nosotros .nosotros .frase h2 span {
+    font-size: 5.5rem;
+  }
+  main #nosotros .nosotros .vision {
+    padding: 0vw 2.7vw 0vh 2.7vw;
+  }
+  main #nosotros .nosotros .vision p {
+    font-size: 3.5rem;
+  }
+  main #nosotros .nosotros .vision .boton-galeria a {
+    padding: 0vh 3.5vw 10vh;
+  }
+  main #productos {
+    margin: 0vh auto;
+  }
+  main #productos .productos {
+    padding-bottom: 0vh;
+  }
+  main #clientes {
+    margin: 0vh auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #clientes .experiencia {
+    height: 50vh;
+  }
+  main #clientes .experiencia video {
+    height: 45vh;
+  }
+  main #contactanos {
+    width: 75vw;
+    margin: 0vh auto;
+  }
+  main #contactanos .contactanos {
+    width: 100%;
+    margin: 5vh auto;
+  }
+  main #contactanos .contactanos h4 {
+    font-size: 6rem;
+  }
+  main #contactanos .contactanos a {
+    font-size: 4rem;
+    padding: 3vh 2vw 0vh;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 4px;
+  }
+  header {
+    font-size: 3rem;
+    font-weight: bold;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .horarios span {
+    display: none;
+  }
+  header a.showroom {
+    display: none;
+  }
+  main section .logo {
+    margin: 0vh auto;
+    width: 30vw;
+  }
+  main section .logo img {
+    width: 30vw;
+  }
+  main nav ul {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  main .marca {
+    height: 60%;
+    margin: 0vh auto;
+    width: 95vw;
+  }
+  main .marca .principal {
+    width: 90vw;
+  }
+  main .marca .principal video {
+    width: 100%;
+  }
+  main .marca .secciones-marca {
+    width: 90vw;
+    font-size: 3rem;
+  }
+  main .marca .secciones-marca h3 {
+    display: none;
+  }
+  main #nosotros {
+    width: 95vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+  }
+  main #nosotros .nosotros {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #nosotros .nosotros .frase {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+  }
+  main #nosotros .nosotros .frase h2 {
+    text-align: left;
+  }
+  main #nosotros .nosotros .frase h2 br {
+    display: none;
+  }
+  main #nosotros .nosotros .vision {
+    padding: 0vh 3vw 2vw 3vw;
+    width: 100%;
+  }
+  main #nosotros .nosotros .vision p {
+    font-size: 3.8rem;
+  }
+  main #nosotros .nosotros .vision .boton-galeria {
+    font-size: 4rem;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 25vw;
+  }
+  main #productos {
+    width: 95vw;
+  }
+  main #productos .productos {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  main #productos .productos h3 {
+    font-size: 6rem;
+  }
+  main #productos .productos img {
+    width: 75vw;
+  }
+  main #productos .productos p {
+    font-size: 5rem;
+    width: 75vw;
+  }
+  main #productos .productos .Ble .imagen {
+    width: 75vw;
+  }
+  main #productos .productos .Ble .boton1, main #productos .productos .Ble .boton2, main #productos .productos .Ble .boton3 {
+    width: 25vw;
+    font-size: 4rem;
+    margin-top: 0vh;
+    margin-bottom: 6vh;
+  }
+  main #clientes {
+    margin-top: 0vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 100vw;
+  }
+  main #clientes .experiencia video {
+    height: 100%;
+  }
+  main #contactanos {
+    width: 95vw;
+  }
+  footer .pie a img {
+    width: 5vw;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
